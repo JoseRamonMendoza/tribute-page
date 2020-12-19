@@ -1,0 +1,116 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-background: #06090f;
+  --primary-text-color: #c9d1d9;
+  --primary-title-color: #388bfd;
+
+  --secundary-background: #161b22;
+  --secundary-text-color: #8b949e;
+  --secundary-title-color: #8957e5;
+
+  --footer-text-color: rgba(240, 246, 252, 0.7);
+  --link-color: #58a6ff;
+  --border-color: #30363d;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  text-align: center;
+  color: var(--primary-text-color);
+  background: var(--primary-background);
+}
+
+/**** Header ****/
+#title {
+  color: var(--primary-title-color);
+  font-size: 4rem;
+}
+
+/**** Figure ****/
+#figure-container {
+  display: flex;
+  justify-content: center;
+}
+.img-div {
+  max-width: 50vw;
+  background: var(--secundary-background);
+  padding: 2.5rem 1rem 1rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.img-caption {
+  color: var(--secundary-text-color);
+  font-style: italic;
+}
+
+/**** Section ****/
+section h2 {
+  color: var(--secundary-title-color);
+  font-size: 2.5rem;
+}
+section p {
+  max-width: 55rem;
+  margin: 0 1rem 5rem 1rem;
+  text-align: justify;
+  margin: 0 auto;
+}
+section ul {
+  max-width: 55rem;
+  margin: 0 auto 5rem auto;
+  text-align: left;
+  list-style-type: circle;
+}
+
+section li {
+  margin: 1.6rem 0;
+}
+section li strong {
+  color: var(--link-color);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 555px) {
+  section p {
+    margin: 0 1rem 5rem 1rem;
+  }
+  section ul {
+    margin: 0 1rem 5rem 1rem;
+  }
+}
+
+/**** Footer ****/
+footer {
+  color: var(--footer-text-color);
+  background: var(--secundary-background);
+  margin: 0;
+  padding: 1rem 0;
+  border: 1px solid var(--border-color);
+}
+
+/**** Links ****/
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--link-color);
+}
