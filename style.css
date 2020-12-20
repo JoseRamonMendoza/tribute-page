@@ -10,6 +10,7 @@ html {
 }
 
 :root {
+  --hero-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/gnu-linux-wall-hd-2560x1600.jpg);
   --primary-background: #06090f;
   --primary-text-color: #c9d1d9;
   --primary-title-color: #388bfd;
@@ -33,9 +34,22 @@ body {
 }
 
 /**** Header ****/
+header {
+  background-image: var(--hero-image);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #title {
   color: var(--primary-title-color);
-  font-size: 4rem;
+  font-size: 5rem;
+  margin-top: 0;
 }
 
 /**** Figure ****/
@@ -44,7 +58,6 @@ body {
   justify-content: center;
 }
 .img-div {
-  max-width: 50vw;
   background: var(--secundary-background);
   padding: 2.5rem 1rem 1rem 1rem;
   border: 1px solid var(--border-color);
