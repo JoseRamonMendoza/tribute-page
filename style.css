@@ -10,7 +10,7 @@ html {
 }
 
 :root {
-  --hero-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/gnu-linux-wall-hd-2560x1600.jpg);
+  --hero-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://upload.wikimedia.org/wikipedia/commons/7/79/Wallpaper-gnu.png);
   --primary-background: #06090f;
   --primary-text-color: #c9d1d9;
   --primary-title-color: #388bfd;
